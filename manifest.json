@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+  "name": "Dark Web WhatsApp",
+  "description": "Dark Web WhatsApp",
+  "version": "1.0",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://web.whatsapp.com/*"
+      ],
+      "js": [
+        "dark.js"
+      ],
+      "run_at": "document_end"
+    }
+  ]
+}
